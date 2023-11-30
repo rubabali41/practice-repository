@@ -1,0 +1,9 @@
+import os
+
+data = input()
+
+test_data = os.path.join("data", data) 
+
+with open(test_data, 'r') as f:
+    lines = f.readlines()
+    print (f"Number of lines: {len(lines)}")   
